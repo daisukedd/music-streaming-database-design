@@ -184,7 +184,7 @@ O sistema armazenará:
 
 ## 5.1 Diagrama Entidade-Relacionamento
 
-> IMG exportada do MySQL Workbench, LucidChart ou Draw.io!
+[Ver documentação completa](./diagrams/conceitual.jpeg)
 
 ---
 
