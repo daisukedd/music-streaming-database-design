@@ -369,15 +369,15 @@ O objetivo é apresentar **entidades, atributos e relacionamentos**, sem se preo
 ---
 
 # 7. Modelo Físico (Script SQL)
-[Acessar Script de Criação](sql/creates)
+[Acessar Script de Criação](sql/creates.sql)
 ---
 
 # 8. Inserção de Dados (Exemplos)
-[Acessar Script de Inserção](sql/inserts)
+[Acessar Script de Inserção](sql/inserts.sql)
 ---
 
 # 9. Consultas SQL (Regras de Negócio)
-[Acessar Script de Consulta](sql/selects)
+[Acessar Script de Consulta](sql/selects.sql)
 ---
 
 # 10. Considerações Finais
