@@ -1,7 +1,13 @@
 # **Projeto de Banco de Dados – Sistema de Streaming Musical (Modelo Estilo Spotify)**
 
 **Disciplina:** Banco de Dados – MySQL Workbench
-**Equipe:** _Names_
+
+**Equipe:** 
+                                                        
+                                                  Arthur Felipe de Carvalho de Brito;
+                                                    Glaucia Maria Brito de Oliveira;
+                                                      Kevin Wallen Santos Pinheiro;
+                                                        Mirella Lima da Cruz.
 
 ---
 
@@ -59,7 +65,7 @@ O sistema armazenará:
 
 # 4. Dicionário de Dados
 
-## 4.x – Artist
+## 4.1 – Artist
 
 **Descrição:** Armazena informações dos artistas presentes no catálogo.
 **Atributos:**
@@ -74,15 +80,101 @@ O sistema armazenará:
 
 ---
 
-Continue com as demais entidades seguindo esse padrão:
+## 4.2 - Gênero
+**Descrição:** Armazena informações dos gêneros musicais.
+**Atributos:**
 
-- Album
-- Track
-- Genre
-- User
-- Playlist
-- PlaylistTrack
-- History
+- `genre_id` – identificador único do gênero
+- `name` – nome do gênero
+- `description` – descrição do gênero
+
+**PK:** `genre_id`
+
+---
+## 4.3 - User
+**Descrição:** Armazena informações dos usuários cadastrados na plataforma.
+**Atributos:**
+
+- `user_id` – identificador único do usuário
+- `name` – nome do usuário
+- `email` – email do usuário, utilizado principalmente no login
+- `password_hash` – senha do usuário, utilizada principalmente no login
+- `created_at` – momento da criação da conta (data e o horário)
+
+**PK:** `user_id`
+
+---
+## 4.4 - Álbum
+**Descrição:** Armazena informações dos álbuns presentes no catálogo.
+**Atributos:**
+
+- `album_id` – identificador único do álbum
+- `artist_id` – chave estrangeira na tabela artista
+- `title` – título do álbum
+- `release_year` – ano de estreia
+- `label` – descrição curta (opcional)
+
+**PK:** `album_id`
+**FK:** `artist_id`
+
+---
+## 4.5 - Track
+**Descrição:** Armazena informações das faixas individuais presentes no catálogo.
+**Atributos:**
+
+- `track_id` – identificador único da faixa
+- `album_id` – chave estrangeira na tabela álbum
+- `artist_id` – chave estrangeira na tabela artista
+- `genre_id` – chave estrangeira na tabela gênero
+- `title` – título da faixa
+- `duration_seconds` – duração da faixa (em segundos)
+- `release_date` – ano de lançamento
+
+**PK:** `track_id`
+**FK:** `artist_id`, `album_id`, `genre_id`
+
+---
+## 4.6 - Playlist
+**Descrição:** Armazena informações das playlists da plataforma.
+**Atributos:**
+
+- `playlist_id` – identificador único da playlist
+- `user_id` – chave estrangeira na tabela user
+- `name` – título da playlist
+- `description` – descrição da playlist
+- `created_at` – momento de criação da playlist
+
+**PK:** `track_id`
+**FK:** `user_id`
+
+---
+
+## 4.7 - PlaylistTrack
+**Descrição:** Tabela intermediária entre as tabelas playlist e track.
+**Atributos:**
+
+- `playlist_id` – identificador da playlist
+- `track_id` – identificador da faixa
+- `position` – posição da faixa na playlist
+- `added_at` – quando a faixa foi adicionada na playlist
+
+**PK composta:** `track_id`, `playlist_id`
+
+---
+## 4.8 - History
+**Descrição:** Tabela que armazena toda vez que um usuário toca uma música.
+**Atributos:**
+
+- `history_id` – identificador do histórico
+- `user_id` – chave estrangeira na tabela user
+- `track_id` – chave estrangeira na tabela track
+- `listened_at` – momento em que a faixa foi reproduzida
+- `device` - aparelho usado pelo usuário para ouvir a música
+- `duration_listened_seconds` - duração de reprodução em segundos
+
+**PK composta:** `history_id`,
+**FK:** `user_id`, `track_id`
+
 
 ---
 
