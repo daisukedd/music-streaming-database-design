@@ -369,48 +369,15 @@ O objetivo é apresentar **entidades, atributos e relacionamentos**, sem se preo
 ---
 
 # 7. Modelo Físico (Script SQL)
-
-Incluir:
-
-- CREATE DATABASE
-- CREATE TABLE
-- PKs e FKs
-- UNIQUE
-- NOT NULL
-- DEFAULT
-- AUTO_INCREMENT
-- Índices opcionais
-
+[Acessar Script de Criação](sql/creates)
 ---
 
 # 8. Inserção de Dados (Exemplos)
-
-Inclua scripts INSERT para:
-
-- Artists
-- Genres
-- Albums
-- Tracks
-- Users
-- Playlists
-- PlaylistTrack
-- History
-
-_(Rodável de uma vez.)_
-
+[Acessar Script de Inserção](sql/inserts)
 ---
 
 # 9. Consultas SQL (Regras de Negócio)
-
-Exemplos:
-
-- Listar músicas por artista
-- Pegar o ranking das músicas mais ouvidas
-- Mostrar todas as músicas de uma playlist
-- Exibir gênero mais ouvido
-- Buscar músicas por termo
-- Top artistas por streams
-
+[Acessar Script de Consulta](sql/selects)
 ---
 
 # 10. Considerações Finais
