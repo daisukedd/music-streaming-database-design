@@ -60,6 +60,8 @@ O sistema armazenará:
 - Uma música pode estar em várias playlists.
 - O sistema registra cada música reproduzida pelo usuário.
 - Cada reprodução mantém data/hora e dispositivo.
+- O sistema deve registrar a duração que o usuário escutou de cada música durante uma reprodução, permitindo calcular quanto tempo cada usuário ouviu no total.
+- Cada música deve armazenar sua duração em segundos, permitindo calcular a duração total de um álbum.
 
 ---
 
@@ -184,7 +186,7 @@ O sistema armazenará:
 
 ## 5.1 Diagrama Entidade-Relacionamento
 
-[Ver diagrama] (./diagrams/conceitual.jpeg)
+[Ver diagrama](diagrams/conceitual.jpeg)
 
 ---
 
