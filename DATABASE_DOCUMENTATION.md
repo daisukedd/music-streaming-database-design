@@ -184,7 +184,7 @@ O sistema armazenará:
 
 ## 5.1 Diagrama Entidade-Relacionamento
 
-[Ver documentação completa](./diagrams/conceitual.jpeg)
+[Ver diagrama] (./diagrams/conceitual.jpeg)
 
 ---
 
@@ -196,10 +196,6 @@ O objetivo é apresentar **entidades, atributos e relacionamentos**, sem se preo
 ---
 
 ## 5.3 Checklist Conceitual das Entidades
-
-_(nomes em inglês + snake_case no banco + camelCase no código)_
-
----
 
 ### **Artist**
 
@@ -257,7 +253,7 @@ _(nomes em inglês + snake_case no banco + camelCase no código)_
   - N Tracks → 1 Genre
   - N Tracks → 1 Album
   - N Tracks ↔ N Playlists (via PlaylistTrack)
-  - N Tracks → N History entries
+  - 1 Tracks → N History entries
 
 ---
 
@@ -367,16 +363,7 @@ _(nomes em inglês + snake_case no banco + camelCase no código)_
 
 # 6. Modelo Lógico
 
-Para cada tabela incluir:
-
-- Nome da tabela
-- Colunas com tipos de dados (PK e FKs)
-- Cardinalidade
-- Observações técnicas
-- Regras de validação
-
-_(Conteúdo será preenchido após a criação no Workbench.)_
-
+[Acessar modelo lógico](./diagrams/workbench-diagram.png)
 ---
 
 # 7. Modelo Físico (Script SQL)
