@@ -366,26 +366,34 @@ O objetivo é apresentar **entidades, atributos e relacionamentos**, sem se preo
 # 6. Modelo Lógico
 
 [Acessar modelo lógico](./diagrams/workbench-diagram.png)
+
 ---
 
 # 7. Modelo Físico (Script SQL)
 [Acessar Script de Criação](sql/creates.sql)
+
 ---
 
 # 8. Inserção de Dados (Exemplos)
 [Acessar Script de Inserção](sql/inserts.sql)
+
 ---
 
 # 9. Consultas SQL (Regras de Negócio)
 [Acessar Script de Consulta](sql/selects.sql)
+
 ---
 
 # 10. Considerações Finais
 
 De forma conclusiva, o projeto de criação do banco de dados apresentado possibilitou à equipe uma compreensão mais ampla sobre padrões de organização e os principais conceitos envolvidos na modelagem, criação de tabelas, definição de relacionamentos e elaboração de consultas. Esse processo contribuiu significativamente para o desenvolvimento técnico e conceitual do grupo.
+
 A etapa inicial foi marcada pela busca de um tema que atendesse às expectativas de todos os integrantes e suprisse as necessidades do projeto. Nesse momento, surgiram algumas dúvidas relacionadas à estrutura interna do banco de dados, especialmente devido à necessidade de compreender de forma mais profunda o funcionamento de uma rede de streaming musical. Esse desafio inicial orientou as decisões seguintes e motivou o aprimoramento do conhecimento coletivo.
-As melhorias sugeridas para o streaming fictício estão relacionadas à capacidade de busca e conciliação dos dados fornecidos pelos usuários, tornando os filtros de pesquisa e os sistemas de recomendação mais intuitivos, interativos e eficientes. No futuro, a diversificação do aplicativo pode ser ampliada com a implementação de novas funcionalidades, como a criação de playlists colaborativas com amigos, o uso de elementos de gamificação — como conquistas baseadas no tempo de uso — e o aprimoramento das páginas das faixas, tornando-as mais informativas e atraentes.
+
+As melhorias sugeridas para o streaming fictício estão relacionadas à capacidade de busca e conciliação dos dados fornecidos pelos usuários, tornando os filtros de pesquisa e os sistemas de recomendação mais intuitivos, interativos e eficientes. No futuro, a diversificação do aplicativo pode ser ampliada com a implementação de novas funcionalidades, como a criação de playlists colaborativas com amigos, o uso de elementos de gamificação — como conquistas baseadas no tempo de uso — e o aprimoramento das páginas das faixas, tornando-as mais informativas e atraente
+
 Desse modo, tornamos o projeto mais capacitado para possíveis manutenções e modificações que podem ser feitas posteriormente, deixando o sistema em uma base sólida de informações e organização.
+
 ---
 
 # 11. Referências
