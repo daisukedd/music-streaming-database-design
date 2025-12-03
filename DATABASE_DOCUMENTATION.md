@@ -25,7 +25,7 @@ O documento descreve:
 - Modelo físico (SQL)
 - Inserts e consultas
 - Convenções e referências
-
+  
 ---
 
 # 2. Escopo do Sistema
@@ -398,9 +398,8 @@ Desse modo, tornamos o projeto mais capacitado para possíveis manutenções e m
 
 # 11. Referências
 
-- Aulas
-- Documentação SQL
-- Artigos e vídeos usados
+- Aulas da disciplina de Banco de Dados, ministradas pelo professor Leonardo Nunes.
+- W3SCHOOLS. MySQL Tutorial. Disponível em: https://www.w3schools.com/mysql/default.asp. Acesso em: 26 nov. 2025.
 
 ---
 
